@@ -24,7 +24,12 @@
     btn.addEventListener("click",toggle, false);
 
 
-
+    var a = document.querySelectorAll("#aNavBar");
+    for(var i = 0; i < a.length; i++){
+        a[i].addEventListener('click', () =>  {
+            menu.classList.remove("activeNav");
+        });
+    }
 
 
 

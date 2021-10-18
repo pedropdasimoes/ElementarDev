@@ -1320,7 +1320,7 @@ button[type="submit"]:hover{
 }
 .navBar{
     position: relative;
-    top: -1240%;
+    top: -300vh;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -1330,7 +1330,9 @@ button[type="submit"]:hover{
 .redesHeader{
     display: none;
 }
-
+.btnChangeColor{
+    border: none;
+}
 .sectionPresents{
     flex-direction: column;
     padding-top: 40%;
@@ -1338,18 +1340,18 @@ button[type="submit"]:hover{
 }
 .sectionAbout{
     
-    padding-top: 15%;
+    padding-top: 20%;
 }
 .sectionPortifolio{
     
-    padding-top: 15%;
+    padding-top: 20%;
 }
 .sectionSkills{
     
     padding-top: 40%;
 }
 .sectionContact{
-    padding-top: 15%;
+    padding-top: 20%;
 }
 .h1Title{
     
