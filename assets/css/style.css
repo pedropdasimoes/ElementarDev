@@ -1309,7 +1309,7 @@ button[type="submit"]:hover{
 .containerHeader{
     width: 100%;
     position: fixed;
-    height: 10%;
+    height: 50px;
 }
 .containerMain{
     padding-left: 0px;
@@ -1319,8 +1319,12 @@ button[type="submit"]:hover{
     height: 100%;
 }
 .navBar{
-    position: absolute;
-    top: -1000%;
+    position: relative;
+    top: -1240%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(#111113, #282b2e);
     z-index: -1;
 }
 .redesHeader{
@@ -1386,6 +1390,8 @@ button[type="submit"]:hover{
 .activeNav{
     top: 0;
     
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(#111113, #282b2e);
     box-shadow: 8px 5px 30px black;
     min-height: 100vh;
@@ -1431,10 +1437,7 @@ button[type="submit"]:hover{
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    position: fixed;
-    top: -15%;
-    right: 50%;
-    transform: translateX(50%);
+    position: initial;
     transition: 1s;
 }
 .activeColor{    
