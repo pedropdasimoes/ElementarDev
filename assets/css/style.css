@@ -1536,14 +1536,23 @@ button[type="submit"]:hover{
     0%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
     }
-    33%{
+    16%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 30px var(--color-main);
     }
-    66%{
+    33%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 60px var(--color-main);
     }
-    100%{
+    49%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 80px var(--color-main);
+    }
+    67%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 60px var(--color-main);
+    }
+    84%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 30px var(--color-main);
+    }
+    100%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
     }
     
 }
@@ -1551,14 +1560,17 @@ button[type="submit"]:hover{
     0%{
         background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
     }
-    33%{
+    25%{
         background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
     }
-    66%{
+    50%{
         background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
     }
-    100%{
+    75%{
         background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
+    }
+    100%{
+        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
     }
 }
 .contentContact #buttonSend span:nth-child(1){
