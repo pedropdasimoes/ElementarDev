@@ -1324,7 +1324,7 @@ button[type="submit"]:hover{
 }
 
 
-@media screen and (max-width: 770px ){
+@media screen and (max-width: 750px ){
 .containerHeader{
     width: 100%;
     position: fixed;
