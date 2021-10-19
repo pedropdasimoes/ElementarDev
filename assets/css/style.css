@@ -1519,7 +1519,7 @@ button[type="submit"]:hover{
 }
 .skill .progress::after{
     background: var(--color-main);    
-    animation: buttonProgress 1s infinite ease;
+    animation: buttonProgress 0.5s infinite ease;
 }
 
 .skill .progress::before{
@@ -1536,20 +1536,8 @@ button[type="submit"]:hover{
     0%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
     }
-    16%{
-        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 30px var(--color-main);
-    }
-    33%{
-        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 60px var(--color-main);
-    }
-    49%{
-        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 80px var(--color-main);
-    }
-    67%{
-        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 60px var(--color-main);
-    }
-    84%{
-        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 30px var(--color-main);
+    50%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 20px var(--color-main);
     }
     100%{
         box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
