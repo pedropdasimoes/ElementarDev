@@ -1364,6 +1364,7 @@ button[type="submit"]:hover{
 .sectionPresents{
     flex-direction: column;
     background-position: left;
+    top: -50px;
 }
 .sectionAbout{
     
