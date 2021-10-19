@@ -743,6 +743,7 @@ svg:hover path{
 .imgAbout img{
     width: 50%;
     border-radius: 50%;
+    margin: 50px 0px;
 }
 
 
@@ -1350,7 +1351,7 @@ button[type="submit"]:hover{
 }
 .btnChangeColor{
     border: none;
-    font-size: 9vw;
+    font-size: 8vw;
 }
 #colorSpan{
     height: 3vw;
@@ -1392,14 +1393,13 @@ button[type="submit"]:hover{
     display: block;
     width: 80%;
 }
-.contentAbout{
-    
-    flex-direction: column;
-    margin-top: 10%;
+.textAbout p{
+    font-size: 5vw;
 }
 .textAbout{
     width: 80%;
     text-align: center;
+    margin: 0;
 }
 .portifolio{
     width: 70%;
@@ -1408,7 +1408,7 @@ button[type="submit"]:hover{
     width: 100%;
 }
 .skill span {
-    font-size: 16px;
+    font-size: 5vw;
 }
 .row{
     flex-direction: column;
@@ -1545,6 +1545,9 @@ button[type="submit"]:hover{
 .skill .progress::after{
     background: var(--color-main);    
     animation: buttonProgress 0.5s infinite ease;
+    height: 4vw;
+    width: 4vw;
+    top: -100%;
 }
 
 .skill .progress::before{
@@ -1639,8 +1642,61 @@ button[type="submit"]:hover{
 
 .portifolio p{    
     padding: 10%;
+    font-size: 4.5vw;
 }
 .navUl li a{
-    font-size: 10vw;
+    font-size: 8vw;
+}
+.portifolio a{
+    font-size: 5vw;
+}
+.h2Title{
+    font-size: 9vw;
+}
+.portifolio h2{
+    font-size: 5vw;    
+}
+.portifolio h3{
+    font-size: 12vw;
+}
+.skill{
+    
+    border-radius: 5vw;
+    height: 10vw;
+    margin: 4vw 0vw;
+}
+.divLogoSkills img {
+    height: 30vw;
+    width: 80vw;
+}
+.inputBox .text {
+    font-size: 7vw;
+}
+.inputBox input,
+.inputBox textarea{
+    font-size: 6vw;
+}
+.inputBox input:focus ~ .line,
+.inputBox input:valid ~ .line{
+    height: 8.5vw;
+}
+.inputBox input:focus + .text,
+.inputBox input:valid + .text,
+.inputBox textarea:focus + .text,
+.inputBox textarea:valid + .text{
+    top: -6vw;
+}
+.inputBox textarea:focus ~ .line,
+.inputBox textarea:valid ~ .line{
+    height: 48vw;
+}
+button[type="submit"]{
+    font-size: 5vw;
+}
+.logoHeader a{
+    height: 100%;
+}
+.logoHeader svg{
+    padding: 0;
 }
 }
