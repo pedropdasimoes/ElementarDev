@@ -635,6 +635,7 @@ svg:hover path{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin-bottom: 20px;
 }
 #space{
     display: flex;
@@ -646,6 +647,9 @@ svg:hover path{
 }
 #linha{
     display: flex;
+}
+.spaceTitle{
+    height: 52px;
 }
 .gnTitle.hidden{
     display: none;
@@ -1385,10 +1389,6 @@ button[type="submit"]:hover{
 .row{
     flex-direction: column;
 }
-.sectionContact.divTitle{
-    
-    margin-bottom: 5%;
-}
 .activeNav{
     top: 0;
     
@@ -1444,5 +1444,187 @@ button[type="submit"]:hover{
 }
 .activeColor{    
     top: 85%;
+}
+.swiper
+.swiper-slide-active.portifolio::before,
+.swiper-slide-active.portifolio::after{
+    background: linear-gradient(235deg, var(--color-main), #000,#000,#000,#000,#000, var(--color-main));
+    transition: 1s;
+}
+.swiper-slide-active.portifolio span:nth-child(1){
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,var(--color-main));
+    animation: colorSpanChild1 1s infinite ease;
+}
+@keyframes colorSpanChild1 {
+    0%{
+        left: -100%;        
+    }
+    100%{
+        left: 100%;
+    }
+}
+.swiper-slide-active.portifolio span:nth-child(3){
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--color-main));
+    animation: colorSpanChild3 1s infinite ease;
+    
+    animation-delay: -1.3s;
+}
+@keyframes colorSpanChild3 {
+    0%{
+        right: -100%;        
+    }
+    100%{
+        right: 100%;
+    }
+}
+.swiper-slide-active.portifolio span:nth-child(2){
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--color-main));
+    animation: colorSpanChild2 1s infinite ease;
+    
+    animation-delay: -0.6s;
+}
+@keyframes colorSpanChild2 {
+    0%{
+        top: -100%;        
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+.swiper-slide-active.portifolio span:nth-child(4){
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--color-main));
+    animation: colorSpanChild4 1s infinite ease;
+    animation-delay: -1s;
+}
+@keyframes colorSpanChild4 {
+    0%{
+        bottom: -100%;        
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+.skill .progress::after{
+    background: var(--color-main);    
+    animation: buttonProgress 1s infinite ease;
+}
+
+.skill .progress::before{
+    background: var(--color-main);
+}
+
+
+.skill .progress{
+    
+    box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
+    animation: skillMobile 1s infinite ease;
+}
+@keyframes buttonProgress {
+    0%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
+    }
+    33%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 30px var(--color-main);
+    }
+    66%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 60px var(--color-main);
+    }
+    100%{
+        box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 80px var(--color-main);
+    }
+    
+}
+@keyframes skillMobile {
+    0%{
+        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
+    }
+    33%{
+        background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
+    }
+    66%{
+        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
+    }
+    100%{
+        background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
+    }
+}
+.contentContact #buttonSend span:nth-child(1){
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,var(--color-main));
+    animation: colorSpanChild1 1s infinite ease;
+}
+@keyframes colorSpanChild1 {
+    0%{
+        left: -100%;        
+    }
+    100%{
+        left: 100%;
+    }
+}
+.contentContact #buttonSend span:nth-child(3){
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--color-main));
+    animation: colorSpanChild3 1s infinite ease;
+    
+    animation-delay: -1.3s;
+}
+@keyframes colorSpanChild3 {
+    0%{
+        right: -100%;        
+    }
+    100%{
+        right: 100%;
+    }
+}
+.contentContact #buttonSend span:nth-child(2){
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--color-main));
+    animation: colorSpanChild2 1s infinite ease;
+    
+    animation-delay: -0.6s;
+}
+@keyframes colorSpanChild2 {
+    0%{
+        top: -100%;        
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+.contentContact #buttonSend span:nth-child(4){
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--color-main));
+    animation: colorSpanChild4 1s infinite ease;
+    animation-delay: -1s;
+}
+@keyframes colorSpanChild4 {
+    0%{
+        bottom: -100%;        
+    }
+    100%{
+        bottom: 100%;
+    }
 }
 }
