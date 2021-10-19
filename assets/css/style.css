@@ -219,7 +219,7 @@ body{
 .navUl li a{
     color: var(--colo-letter);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     overflow: hidden;
     transition: 0.5s;
@@ -388,25 +388,26 @@ svg:hover path{
 
 .boxChangeColor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
     background-color: #111113;
-    top: -40px;
-    right: 1%;
+    top: 0;
+    right: -12.5vw;
     transition: 1s;
+    width: 25vw;
 }
 .heightColor{
-    top: 4px;
+    right: 0;
 }
 .color{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: transparent;
-    width: 130px;
-    height: 25px;
+    width: 100%;
+    height: 3vw;
     padding: 20px 2px;
     overflow: hidden;
     position: relative;
@@ -490,12 +491,12 @@ svg:hover path{
 
 
 .color button{
-    cursor: pointer;
+    cursor: pointer;    
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
 }
 #buttonColor1{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: transparent;
     border: solid 2px #21e5f3;
     background-color: transparent;
@@ -505,9 +506,6 @@ svg:hover path{
     box-shadow: 0 0 2px #21e5f3, 0 0 10px #21e5f3, 0 0 80px #21e5f3;
 }
 #buttonColor2{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: transparent;
     border: solid 2px #44f321;
     background-color: transparent;
@@ -517,9 +515,6 @@ svg:hover path{
     box-shadow: 0 0 2px #44f321, 0 0 10px #44f321, 0 0 80px #44f321;
 }
 #buttonColor3{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: transparent;
     border: solid 2px #f32195;
     background-color: transparent;
@@ -529,9 +524,6 @@ svg:hover path{
     box-shadow: 0 0 2px #f32195, 0 0 10px #f32195, 0 0 80px #f32195;
 }
 #buttonColor4{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: transparent;
     border: solid 2px #f0f321;
     background-color: transparent;
@@ -541,9 +533,6 @@ svg:hover path{
     box-shadow: 0 0 2px #f0f321, 0 0 10px #f0f321, 0 0 80px #f0f321;
 }
 #buttonColor5{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: transparent;
     border: solid 2px #ff0000;
     background-color: transparent;
@@ -564,10 +553,10 @@ svg:hover path{
     color: var(--colo-letter);
     border: 1px solid rgba(130, 135, 139, 0.5);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     transition: 1s;
-    width: 130px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -581,8 +570,8 @@ svg:hover path{
     border: 1px solid #000;
 }
 #colorSpan{
-    width: 5px;
-    height: 5px;
+    width: 1vw;
+    height: 1vw;
     background-color: #FFF;
     position: relative;
     border-radius: 50%;  
@@ -636,6 +625,9 @@ svg:hover path{
     flex-direction: column;
     flex-grow: 1;
     margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
 }
 #space{
     display: flex;
@@ -647,9 +639,10 @@ svg:hover path{
 }
 #linha{
     display: flex;
+    padding: 10px 0px;
 }
 .spaceTitle{
-    height: 52px;
+    height: 7.5vw;
 }
 .gnTitle.hidden{
     display: none;
@@ -663,11 +656,11 @@ svg:hover path{
 }
 .h1Title{
     color: #FFF;
-    font-size: 6rem;
+    font-size: 8vw;
 }
 .h2Title{
     color: #FFF;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 @keyframes animateH1 {
@@ -713,13 +706,14 @@ svg:hover path{
 
 
 .titleSections{
-    align-self: center;
+    display: flex;
+    align-items: center;
     height: 20%;
 }
 
 .contentAbout{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 70%;
@@ -729,11 +723,14 @@ svg:hover path{
 .textAbout{
     color: var(--colo-letter);
     flex-grow: 1;
-    width: 50%;
+    width: 100%;
     height: 100%;
+    margin: 50px 0px;
 }
 .textAbout p{
     height: 80%;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .imgAbout{
@@ -810,7 +807,7 @@ svg:hover path{
     right: -2px;
     bottom: -2px;
     left: -2px;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.2);
     z-index: -1;
     transition: 1s;
 }
@@ -821,7 +818,7 @@ svg:hover path{
     right: -2px;
     bottom: -2px;
     left: -2px;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.2);
     z-index: -1;
     filter: blur(40px);
     transition: 1s;
@@ -829,18 +826,22 @@ svg:hover path{
 .swiper
 .swiper-slide-active.portifolio:hover::before,
 .swiper-slide-active.portifolio:hover::after{
-    background: linear-gradient(235deg, var(--color-main), #000,#000,#000,#000,#000, var(--color-main));
+    box-shadow: 0 0 1px var(--color-main), 0 0 1px var(--color-main), 0 0 5px var(--color-main);
     transition: 1s;
 }
 
 .portifolio h2{
-    font-size: 2em;
+    font-size: 1.5vw;    
+    margin: 10px 0px;
 }
 .portifolio h3{
-    font-size: 1.5em;
-    transition: 1s;
+    font-size: 4.5vw;
+    margin: 10px 0px;
 }
-
+.portifolio p{    
+    padding: 5%;
+    font-size: 1.5vw;
+}
 
 
 
@@ -849,12 +850,13 @@ svg:hover path{
 .portifolio a{
     color: var(--colo-letter);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     overflow: hidden;
     transition: 0.5s;
-    width: 100%;
+    width: 70%;
     padding: 10px 10px;
+    margin: 20px 0px;
     position: relative;
 }
 .swiper-slide-active.portifolio span{
@@ -949,9 +951,8 @@ svg:hover path{
 
 .swiper {
     width: 100%;
-    padding-top: 50px;
     overflow: visible;
-    padding-bottom: 50px;
+    flex-grow: 8;
   }
 
   .swiper-slide {
@@ -990,16 +991,16 @@ svg:hover path{
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.5);
-    border-radius: 20px;
+    border-radius: 3vw;
     width: 100%;
-    height: 40px;
-    margin: 10px 0px;
+    height: 3vw;
+    margin: 1vw 0vw;
 }
 .progressBar{
     background-color: #000;
     width: 70%;
-    height: 10px;
-    border-radius: 20px;
+    height: 1vw;
+    border-radius: 1vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1007,13 +1008,13 @@ svg:hover path{
 .skill span{
     width: 15%;
     text-align: center;
-    font-size: 22px;
+    font-size: 2.2vw;
     color: var(--colo-letter);
 }
 .progress{
     position: relative;
     width: 70%;
-    height: 10px;
+    height: 1vw;
     background: linear-gradient(90deg,transparent, #FFF);
     border-radius: 20px;
     animation: progress 3s ease-in-out forwards;
@@ -1029,7 +1030,7 @@ svg:hover path{
     position: absolute;
     top: 0;
     right: 0;
-    height: 10px;
+    height: 1vw;
     border-radius: 20px;
     width: 100%;
     background-color: #FFF;
@@ -1039,10 +1040,10 @@ svg:hover path{
 .progress::after{
     content: '';
     position: absolute; 
-    top: -50%;
+    top: -25%;
     right: 0px;
-    width: 20px;
-    height: 20px;
+    width: 1.5vw;
+    height: 1.5vw;
     border-radius: 50%;
     background: #FFF;
     z-index: 999;
@@ -1074,7 +1075,19 @@ svg:hover path{
     box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
 }
 
-
+.divLogoSkills{
+    width: 80%;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.divLogoSkills img{
+    width: 100%;
+    
+    height: 14vw;
+    width: 40vw;
+}
 
 
 
@@ -1137,6 +1150,7 @@ svg:hover path{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 2vw 0vw;
 }
 
 .col{
@@ -1159,7 +1173,7 @@ svg:hover path{
     width: 100%;
     height: 100%;
     color: var(--colo-letter);
-    font-size: 20px;
+    font-size: 2.5vw;
     pointer-events: none;
     transition: 1s;
 }
@@ -1168,7 +1182,7 @@ svg:hover path{
 .inputBox textarea{
     width: 100%;
     margin: 10px 0px;
-    font-size: 15px;
+    font-size: 2vw;
     position: relative;
     top: 11px;
     padding: 3%;
@@ -1186,7 +1200,7 @@ svg:hover path{
 .inputBox input:valid + .text,
 .inputBox textarea:focus + .text,
 .inputBox textarea:valid + .text{
-    top: -20px;
+    top: -2vw;
     left: 0px;
 }
 
@@ -1202,11 +1216,11 @@ svg:hover path{
 }
 .inputBox input:focus ~ .line,
 .inputBox input:valid ~ .line{
-    height: 60%;
+    height: 3.5vw;
 }
 .inputBox textarea:focus ~ .line,
 .inputBox textarea:valid ~ .line{
-    height: 82%;
+    height: 17vw;
 }
 
 
@@ -1214,7 +1228,7 @@ svg:hover path{
 button[type="submit"]{
     color: var(--colo-letter);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2.5vw;
     font-weight: 500;
     overflow: hidden;
     transition: 0.5s;
@@ -1336,10 +1350,18 @@ button[type="submit"]:hover{
 }
 .btnChangeColor{
     border: none;
+    font-size: 9vw;
+}
+#colorSpan{
+    height: 3vw;
+    width: 3vw;
+}
+.color button{
+    height: 5vw;
+    width: 5vw;
 }
 .sectionPresents{
     flex-direction: column;
-    padding-top: 40%;
     background-position: left;
 }
 .sectionAbout{
@@ -1359,10 +1381,12 @@ button[type="submit"]:hover{
 }
 .h1Title{
     
-    font-size: 3rem;
+    font-size: 15vw;
 }
 .divTitle{
     align-items: center;
+    
+    justify-content: center;
 }
 .redesHeader.redesPresent{
     display: block;
@@ -1441,6 +1465,7 @@ button[type="submit"]:hover{
     align-items: center;
     position: initial;
     transition: 1s;
+    width: 60vw;
 }
 .activeColor{    
     top: 85%;
@@ -1448,7 +1473,7 @@ button[type="submit"]:hover{
 .swiper
 .swiper-slide-active.portifolio::before,
 .swiper-slide-active.portifolio::after{
-    background: linear-gradient(235deg, var(--color-main), #000,#000,#000,#000,#000, var(--color-main));
+    box-shadow: 0 0 1px var(--color-main), 0 0 1px var(--color-main), 0 0 5px var(--color-main);
     transition: 1s;
 }
 .swiper-slide-active.portifolio span:nth-child(1){
@@ -1530,7 +1555,7 @@ button[type="submit"]:hover{
 .skill .progress{
     
     box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
-    animation: skillMobile 1s infinite ease;
+    background: linear-gradient(90deg,transparent, var(--color-main));
 }
 @keyframes buttonProgress {
     0%{
@@ -1544,23 +1569,7 @@ button[type="submit"]:hover{
     }
     
 }
-@keyframes skillMobile {
-    0%{
-        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
-    }
-    25%{
-        background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
-    }
-    50%{
-        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
-    }
-    75%{
-        background: linear-gradient(90deg,var(--color-main),transparent, var(--color-main),transparent, var(--color-main),transparent);
-    }
-    100%{
-        background: linear-gradient(90deg,transparent, var(--color-main),transparent, var(--color-main),transparent, var(--color-main));
-    }
-}
+
 .contentContact #buttonSend span:nth-child(1){
     top: 0;
     width: 100%;
@@ -1626,5 +1635,12 @@ button[type="submit"]:hover{
     100%{
         bottom: 100%;
     }
+}
+
+.portifolio p{    
+    padding: 10%;
+}
+.navUl li a{
+    font-size: 10vw;
 }
 }
