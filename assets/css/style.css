@@ -1387,12 +1387,13 @@ button[type="submit"]:hover{
 }
 .divTitle{
     align-items: center;
-    
+    flex-grow: 3;
     justify-content: center;
 }
 .redesHeader.redesPresent{
     display: block;
     width: 80%;
+    flex-grow: 1;
 }
 .textAbout p{
     font-size: 5vw;
