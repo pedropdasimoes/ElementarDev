@@ -642,14 +642,71 @@ svg:hover path{
     padding: 10px 0px;
 }
 .spaceTitle{
-    height: 7.5vw;
+    height: 9.5vw;
 }
 .spaceTitleH2{
-    height: 1.5vw;
+    height: 5.5vw;
 }
-.gnTitle.hidden{
-    display: none;
+.gnTitle{
+    transition: 1s;
 }
+.gnTitle[data-scroll="in"]{
+    animation: lettersAnimate 1s ease;
+}
+.gnTitle[data-scroll="out"]{
+    transform: matrix(0, 0, 0, 0, 0, 0);
+}
+
+@keyframes lettersAnimate {
+    0%{
+        transform: matrix(0, 0, 0, 0, 0, 0);
+        padding: 0vw;
+    }
+    9%{
+        transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+        padding: 0vw;
+    }
+    18%{
+        transform: matrix(0.4, 0, 0, 0.4, 0, 0);
+        padding: 0vw;
+    }
+    27%{
+        transform: matrix(0.6, 0, 0, 0.6, 0, 0);
+        padding: 0vw;
+    }
+    36%{
+        transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+        padding: 0vw;
+    }
+    45%{
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        padding: 0vw;
+    }
+    54%{
+        transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+        padding: 0.2vw 0vw;
+    }
+    63%{
+        transform: matrix(1.4, 0, 0, 1.4, 0, 0);
+        padding: 0.4vw 0vw;
+    }
+    72%{
+        transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+        padding: 0.2vw 0vw;
+    }
+    81%{
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        padding: 0vw;
+    }
+    100%{
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        padding: 0vw;
+    }
+}
+
+
+
+
 .gnTitle.show{
     display: block; 
 }
@@ -663,7 +720,7 @@ svg:hover path{
 }
 .h2Title{
     color: #FFF;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 @keyframes animateH1 {
