@@ -1546,10 +1546,11 @@ button[type="submit"]:hover{
 }
 .skill .progress::after{
     background: var(--color-main);    
-    animation: buttonProgress 0.5s infinite ease;
+    box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
+    animation: none;
     height: 4vw;
     width: 4vw;
-    top: -100%;
+    top: -1.5vw;
 }
 
 .skill .progress::before{
