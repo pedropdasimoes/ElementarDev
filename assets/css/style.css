@@ -644,6 +644,9 @@ svg:hover path{
 .spaceTitle{
     height: 7.5vw;
 }
+.spaceTitleH2{
+    height: 1.5vw;
+}
 .gnTitle.hidden{
     display: none;
 }
