@@ -925,7 +925,7 @@ svg:hover path{
     position: absolute;
     display: block;
 }
-.swiper-slide-active.portifolio:hover span:nth-child(1){
+.swiper-slide-active.portifolio:hover a span:nth-child(1){
     top: 0;
     width: 100%;
     height: 2px;
@@ -940,7 +940,7 @@ svg:hover path{
         left: 100%;
     }
 }
-.swiper-slide-active.portifolio:hover span:nth-child(3){
+.swiper-slide-active.portifolio:hover a span:nth-child(3){
     bottom: 0;
     width: 100%;
     height: 2px;
@@ -957,7 +957,7 @@ svg:hover path{
         right: 100%;
     }
 }
-.swiper-slide-active.portifolio:hover span:nth-child(2){
+.swiper-slide-active.portifolio:hover a span:nth-child(2){
     right: 0;
     width: 2px;
     height: 100%;
@@ -975,7 +975,7 @@ svg:hover path{
     }
 }
 
-.swiper-slide-active.portifolio:hover span:nth-child(4){
+.swiper-slide-active.portifolio:hover a span:nth-child(4){
     left: 0;
     width: 2px;
     height: 100%;
@@ -1146,7 +1146,7 @@ svg:hover path{
 }
 .divLogoSkills img{
     width: 100%;
-    
+    margin: 50px 0px;
     height: 14vw;
     width: 40vw;
 }
@@ -1539,7 +1539,7 @@ button[type="submit"]:hover{
     box-shadow: 0 0 1px var(--color-main), 0 0 1px var(--color-main), 0 0 5px var(--color-main);
     transition: 1s;
 }
-.swiper-slide-active.portifolio span:nth-child(1){
+.swiper-slide-active.portifolio a span:nth-child(1){
     top: 0;
     width: 100%;
     height: 2px;
@@ -1554,7 +1554,7 @@ button[type="submit"]:hover{
         left: 100%;
     }
 }
-.swiper-slide-active.portifolio span:nth-child(3){
+.swiper-slide-active.portifolio a span:nth-child(3){
     bottom: 0;
     width: 100%;
     height: 2px;
@@ -1571,7 +1571,7 @@ button[type="submit"]:hover{
         right: 100%;
     }
 }
-.swiper-slide-active.portifolio span:nth-child(2){
+.swiper-slide-active.portifolio a span:nth-child(2){
     right: 0;
     width: 2px;
     height: 100%;
@@ -1589,7 +1589,7 @@ button[type="submit"]:hover{
     }
 }
 
-.swiper-slide-active.portifolio span:nth-child(4){
+.swiper-slide-active.portifolio a span:nth-child(4){
     left: 0;
     width: 2px;
     height: 100%;
@@ -1730,7 +1730,7 @@ button[type="submit"]:hover{
     margin: 4vw 0vw;
 }
 .divLogoSkills img {
-    height: 30vw;
+    height: 25vw;
     width: 80vw;
 }
 .inputBox .text {
