@@ -860,6 +860,7 @@ svg:hover path{
     backdrop-filter: blur(40px);
     color: #FFF;
     transition: 1s;
+    margin-bottom: 70px;
 }
 .portifolio::before{
     content: '';
