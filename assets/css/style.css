@@ -1466,6 +1466,7 @@ button[type="submit"]:hover{
 }
 .portifolio{
     width: 70%;
+    min-height: 450px;
 }
 .contentSkill{
     width: 100%;
