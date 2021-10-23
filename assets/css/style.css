@@ -851,7 +851,7 @@ svg:hover path{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 90%;
+    min-height: 350px;
     width: 51%;
     padding: 2%;
     margin: 20px;
