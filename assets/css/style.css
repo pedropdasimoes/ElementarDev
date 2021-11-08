@@ -852,7 +852,9 @@ svg:hover path{
     font-size: 2.5vw;
     text-align: center;
 }
-
+#strongP{
+    font-size: 3vw;
+}
 .imgAbout{
     display: flex;
     align-items: center;
@@ -2073,6 +2075,9 @@ button[type="submit"]{
 }
 .navUl li{
     margin: 5px 0px;
+}
+#strongP{
+    font-size: 6vw;
 }
 }
 @media screen and (max-width: 750px) and (orientation: landscape) {
