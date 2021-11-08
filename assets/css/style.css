@@ -1717,6 +1717,9 @@ button[type="submit"]:hover{
     top: 100%;
     animation: animateHeaderMobile 3s infinite ease;
 }
+.containerHeader:hover::before{
+    animation: animateHeaderMobile 3s infinite ease;
+}
 @keyframes animateHeaderMobile {
     0%{
         left:100%;
@@ -2067,6 +2070,9 @@ button[type="submit"]{
     100%{
         bottom: 100%;
     }
+}
+.navUl li{
+    margin: 5px 0px;
 }
 }
 @media screen and (max-width: 750px) and (orientation: landscape) {
