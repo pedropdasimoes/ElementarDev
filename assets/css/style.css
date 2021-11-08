@@ -18,7 +18,7 @@ a:hover{
 body{
     --color-main: #21e5f3;
     --color-main-gradient: var(--color-main)50;
-    --colo-letter: #FFFFFF;
+    --color-letter: #FFFFFF;
     --color-text-hover: #000000;
 }
 
@@ -91,11 +91,6 @@ body{
         top: 100%;
     }
 }
-
-
-
-
-
 
 
 
@@ -217,7 +212,7 @@ body{
     margin: 15px 0px;
 }
 .navUl li a{
-    color: var(--colo-letter);
+    color: var(--color-letter);
     text-transform: uppercase;
     font-size: 1.5vw;
     font-weight: 500;
@@ -373,6 +368,8 @@ svg:hover path{
 
 .sectionPresents{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
     padding: 5%;
@@ -550,7 +547,7 @@ svg:hover path{
     cursor: pointer;
     padding: 10px 10px;
     background-color: transparent;
-    color: var(--colo-letter);
+    color: var(--color-letter);
     border: 1px solid rgba(130, 135, 139, 0.5);
     text-transform: uppercase;
     font-size: 1.5vw;
@@ -629,6 +626,14 @@ svg:hover path{
     justify-content: center;
     align-items: flex-start;
 }
+.divVamosMontar{
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 #space{
     display: flex;
     margin-left: 5%;
@@ -639,10 +644,10 @@ svg:hover path{
 }
 #linha{
     display: flex;
-    padding: 10px 0px;
+    padding: 0px 0px;
 }
 .spaceTitle{
-    height: 9.5vw;
+    height: 8.5vw;
 }
 .spaceTitleH2{
     height: 5.5vw;
@@ -716,13 +721,12 @@ svg:hover path{
 }
 .h1Title{
     color: #FFF;
-    font-size: 8vw;
+    font-size: 6vw;
 }
 .h2Title{
     color: #FFF;
-    font-size: 4vw;
+    font-size: 3vw;
 }
-
 @keyframes animateH1 {
     0%{
         color: var(--color-main);
@@ -737,6 +741,60 @@ svg:hover path{
         text-shadow: 0 0 1px var(--color-main), 0 0 5px var(--color-main), 0 0 40px var(--color-main);
     }
 }
+
+.boxArrow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 1s;
+}
+
+.boxArrow:hover .arrow{
+    border-bottom: solid 2px var(--color-main);
+    border-right: solid 2px var(--color-main);    
+    box-shadow: 10px 10px 17px -6px var(--color-main);
+}
+
+.arrow{
+    display: block;
+    background-color: transparent;
+    border-bottom: solid 2px #FFF;
+    border-right: solid 2px #FFF;
+    transform: rotate(45deg);
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: -0.6vw 0vw;
+    animation: arrowAnimate 2s infinite;    
+    transition: 0.5s;
+}
+
+.arrow:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes arrowAnimate{
+    0%
+    {
+        opacity: 0;        
+        transform: rotate(45deg) translate(-5px,-5px);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(5px,5px);
+    }
+}
+
+
 
 
 
@@ -779,9 +837,11 @@ svg:hover path{
     height: 70%;
     flex-grow: 2;
 }
-
+#colorA{
+    color: var(--color-main);
+}
 .textAbout{
-    color: var(--colo-letter);
+    color: var(--color-letter);
     flex-grow: 1;
     width: 100%;
     height: 100%;
@@ -789,7 +849,7 @@ svg:hover path{
 }
 .textAbout p{
     height: 80%;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -805,7 +865,13 @@ svg:hover path{
     border-radius: 50%;
     margin: 50px 0px;
 }
-
+#vejaAbaixo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0vw;
+}
 
 
 
@@ -910,7 +976,7 @@ svg:hover path{
 
 
 .portifolio a{
-    color: var(--colo-letter);
+    color: var(--color-letter);
     text-transform: uppercase;
     font-size: 1.5vw;
     font-weight: 500;
@@ -996,10 +1062,104 @@ svg:hover path{
 
 
 
+.ulVantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.liVantagens{
+    background-color: rgba(0,0,0,0.6);
+    color: #FFF;
+    margin: 1vw 0vw;
+    font-size: 2.5vw;
+    width: 60vw;
+    padding: 0.6vw;
+    transition: 0.5s;
+}
+.liVantagens:hover{
+    padding: 1vw;
+    width: 65vw;
+    font-size: 2.8vw;
+    box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
+}
 
 
+#btnOrcar{
+    color: var(--color-letter);
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 500;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0.8);
+    width: 60vw;
+    padding: 10px 10px;
+    position: relative;
+}
 
+#btnOrcar a:hover{
+    color: #000;
+    background: var(--color-main);
+    box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 80px var(--color-main);
+    transition-delay: 0.8s;
+}
+#btnOrcar span{
+    position: absolute;
+    display: block;
+}
+#btnOrcar span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,var(--color-main));
+}
+#btnOrcar:hover span:nth-child(1){
+    
+    left: 100%;
+    transition: 1s;
+}
+#btnOrcar span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--color-main));
+}
+#btnOrcar:hover span:nth-child(3){
+    
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#btnOrcar span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--color-main));
+}
+#btnOrcar:hover span:nth-child(2){
+    
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
 
+#btnOrcar span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--color-main));
+}
+#btnOrcar:hover span:nth-child(4){
+    
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.8s;
+}
 
 
 
@@ -1071,7 +1231,7 @@ svg:hover path{
     width: 15%;
     text-align: center;
     font-size: 2.2vw;
-    color: var(--colo-letter);
+    color: var(--color-letter);
 }
 .progress{
     position: relative;
@@ -1234,7 +1394,7 @@ svg:hover path{
     left: 10px;
     width: 100%;
     height: 100%;
-    color: var(--colo-letter);
+    color: var(--color-letter);
     font-size: 2.5vw;
     pointer-events: none;
     transition: 1s;
@@ -1288,7 +1448,7 @@ svg:hover path{
 
 
 button[type="submit"]{
-    color: var(--colo-letter);
+    color: var(--color-letter);
     text-transform: uppercase;
     font-size: 2.5vw;
     font-weight: 500;
@@ -1385,6 +1545,51 @@ button[type="submit"]:hover{
 }
 
 
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 3.5vw;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    color: #FFF;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+#Sobre{
+    z-index: 9;
+    
+    background-image: url('../image/back2.jpg');
+}
+#Portifolio{
+    z-index: 8;
+    
+    background-image: url('../image/back2Reverse.jpg');
+}
+#Comecar{
+    z-index: 7;
+    
+    background-image: url('../image/back2.jpg');
+}
+#Contato{
+    z-index: 6;
+    
+    background-image: url('../image/back2Reverse.jpg');
+
+}
+
 @media screen and (max-width: 750px ){
 .containerHeader{
     width: 100%;
@@ -1444,12 +1649,21 @@ button[type="submit"]:hover{
 }
 .h1Title{
     
-    font-size: 15vw;
+    font-size: 12vw;
 }
 .divTitle{
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 1;
     justify-content: center;
+    margin-top: 20%;
+}
+.divVamosMontar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxArrow{
+    margin-top: 5vw;
 }
 .redesHeader.redesPresent{
     display: block;
@@ -1458,6 +1672,7 @@ button[type="submit"]:hover{
 }
 .textAbout p{
     font-size: 5vw;
+    margin-bottom: 10vw;
 }
 .textAbout{
     width: 80%;
@@ -1518,9 +1733,6 @@ button[type="submit"]:hover{
     100%{
         left: 100%;
     }
-}
-.containerHeader:hover::before{
-    animation: animateHeaderMobile 3s infinite ease;
 }
 .boxChangeColor {
     display: flex;
@@ -1764,4 +1976,461 @@ button[type="submit"]{
 .logoHeader svg{
     padding: 0;
 }
+
+.footer{
+    height: 10.5vw;
 }
+.footer p{
+    font-size: 4.5vw;
+}
+
+.liVantagens{
+    font-size: 5vw;
+    width: 80vw;
+    padding: 2vw;
+}
+#btnOrcar{
+    font-size: 6vw;
+    width: 75vw;
+    margin-bottom: 10vw;
+}
+#vejaAbaixo{
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+#vejaH2{
+    text-align: center;
+}
+
+#btnOrcar span:nth-child(1){
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,var(--color-main));
+    animation: colorSpanChild1 1s infinite ease;
+}
+@keyframes colorSpanChild1 {
+    0%{
+        left: -100%;        
+    }
+    100%{
+        left: 100%;
+    }
+}
+#btnOrcar span:nth-child(3){
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--color-main));
+    animation: colorSpanChild3 1s infinite ease;
+    
+    animation-delay: -1.3s;
+}
+@keyframes colorSpanChild3 {
+    0%{
+        right: -100%;        
+    }
+    100%{
+        right: 100%;
+    }
+}
+#btnOrcar span:nth-child(2){
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--color-main));
+    animation: colorSpanChild2 1s infinite ease;
+    
+    animation-delay: -0.6s;
+}
+@keyframes colorSpanChild2 {
+    0%{
+        top: -100%;        
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+#btnOrcar span:nth-child(4){
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--color-main));
+    animation: colorSpanChild4 1s infinite ease;
+    animation-delay: -1s;
+}
+@keyframes colorSpanChild4 {
+    0%{
+        bottom: -100%;        
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+}
+@media screen and (max-width: 750px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    .containerHeader{
+        width: 100%;
+        position: fixed;
+        height: 50px;
+    }
+    .containerMain{
+        padding-left: 0px;
+    }
+    .logoHeader{
+        width: 20%;
+        height: 100%;
+    }
+    .navBar{
+        position: relative;
+        top: -300vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: linear-gradient(#111113, #282b2e);
+        z-index: -1;
+    }
+    .redesHeader{
+        display: none;
+    }
+    .btnChangeColor{
+        border: none;
+        font-size: 8vw;
+    }
+    #colorSpan{
+        height: 3vw;
+        width: 3vw;
+    }
+    .color button{
+        height: 5vw;
+        width: 5vw;
+    }
+    .sectionPresents{
+        flex-direction: column;
+        background-position: left;
+        top: -50px;
+    }
+    .sectionAbout{
+        
+        padding-top: 20%;
+    }
+    .sectionPortifolio{
+        
+        padding-top: 20%;
+    }
+    .sectionSkills{
+        
+        padding-top: 40%;
+    }
+    .sectionContact{
+        padding-top: 20%;
+    }
+    .h1Title{
+        
+        font-size: 12vw;
+    }
+    .divTitle{
+        align-items: center;
+        flex-grow: 1;
+        justify-content: center;
+        margin-top: 20%;
+    }
+    .divVamosMontar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxArrow{
+        margin-top: 5vw;
+    }
+    .redesHeader.redesPresent{
+        display: block;
+        width: 80%;
+        flex-grow: 1;
+    }
+    .textAbout p{
+        font-size: 5vw;
+    }
+    .textAbout{
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+    .portifolio{
+        width: 70%;
+        min-height: 450px;
+    }
+    .contentSkill{
+        width: 100%;
+    }
+    .skill span {
+        font-size: 5vw;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .activeNav{
+        top: 0;
+        
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(#111113, #282b2e);
+        box-shadow: 8px 5px 30px black;
+        min-height: 100vh;
+    }
+    .divHamburguer{
+        display: block;
+    }
+    .boxChangeColor {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        position: initial;
+        transition: 1s;
+        width: 60vw;
+    }
+    .activeColor{    
+        top: 85%;
+    }
+    .swiper
+    .swiper-slide-active.portifolio::before,
+    .swiper-slide-active.portifolio::after{
+        box-shadow: 0 0 1px var(--color-main), 0 0 1px var(--color-main), 0 0 5px var(--color-main);
+        transition: 1s;
+    }
+    .swiper-slide-active.portifolio a span:nth-child(1){
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,var(--color-main));
+        animation: colorSpanChild1 1s infinite ease;
+    }
+    @keyframes colorSpanChild1 {
+        0%{
+            left: -100%;        
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    .swiper-slide-active.portifolio a span:nth-child(3){
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,var(--color-main));
+        animation: colorSpanChild3 1s infinite ease;
+        
+        animation-delay: -1.3s;
+    }
+    @keyframes colorSpanChild3 {
+        0%{
+            right: -100%;        
+        }
+        100%{
+            right: 100%;
+        }
+    }
+    .swiper-slide-active.portifolio a span:nth-child(2){
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,var(--color-main));
+        animation: colorSpanChild2 1s infinite ease;
+        
+        animation-delay: -0.6s;
+    }
+    @keyframes colorSpanChild2 {
+        0%{
+            top: -100%;        
+        }
+        100%{
+            top: 100%;
+        }
+    }
+    
+    .swiper-slide-active.portifolio a span:nth-child(4){
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,var(--color-main));
+        animation: colorSpanChild4 1s infinite ease;
+        animation-delay: -1s;
+    }
+    @keyframes colorSpanChild4 {
+        0%{
+            bottom: -100%;        
+        }
+        100%{
+            bottom: 100%;
+        }
+    }
+    .skill .progress::after{
+        background: var(--color-main);    
+        box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
+        animation: none;
+        height: 4vw;
+        width: 4vw;
+        top: -1.5vw;
+    }
+    
+    .skill .progress::before{
+        background: var(--color-main);
+    }
+    
+    
+    .skill .progress{
+        
+        box-shadow: 0 0 2px var(--color-main), 0 0 5px var(--color-main), 0 0 5px var(--color-main);
+        background: linear-gradient(90deg,transparent, var(--color-main));
+    }
+    @keyframes buttonProgress {
+        0%{
+            box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
+        }
+        50%{
+            box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 20px var(--color-main);
+        }
+        100%{
+            box-shadow: 0 0 2px var(--color-main), 0 0 10px var(--color-main), 0 0 10px var(--color-main);
+        }
+        
+    }
+    
+    .contentContact #buttonSend span:nth-child(1){
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,var(--color-main));
+        animation: colorSpanChild1 1s infinite ease;
+    }
+    @keyframes colorSpanChild1 {
+        0%{
+            left: -100%;        
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    .contentContact #buttonSend span:nth-child(3){
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,var(--color-main));
+        animation: colorSpanChild3 1s infinite ease;
+        
+        animation-delay: -1.3s;
+    }
+    @keyframes colorSpanChild3 {
+        0%{
+            right: -100%;        
+        }
+        100%{
+            right: 100%;
+        }
+    }
+    .contentContact #buttonSend span:nth-child(2){
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,var(--color-main));
+        animation: colorSpanChild2 1s infinite ease;
+        
+        animation-delay: -0.6s;
+    }
+    @keyframes colorSpanChild2 {
+        0%{
+            top: -100%;        
+        }
+        100%{
+            top: 100%;
+        }
+    }
+    
+    .contentContact #buttonSend span:nth-child(4){
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,var(--color-main));
+        animation: colorSpanChild4 1s infinite ease;
+        animation-delay: -1s;
+    }
+    @keyframes colorSpanChild4 {
+        0%{
+            bottom: -100%;        
+        }
+        100%{
+            bottom: 100%;
+        }
+    }
+    
+    .portifolio p{    
+        padding: 10%;
+        font-size: 4.5vw;
+    }
+    .navUl li a{
+        font-size: 8vw;
+    }
+    .portifolio a{
+        font-size: 5vw;
+    }
+    .h2Title{
+        font-size: 9vw;
+    }
+    .portifolio h2{
+        font-size: 5vw;    
+    }
+    .portifolio h3{
+        font-size: 12vw;
+    }
+    .skill{
+        
+        border-radius: 5vw;
+        height: 10vw;
+        margin: 4vw 0vw;
+    }
+    .divLogoSkills img {
+        height: 25vw;
+        width: 80vw;
+    }
+    .inputBox .text {
+        font-size: 7vw;
+    }
+    .inputBox input,
+    .inputBox textarea{
+        font-size: 6vw;
+    }
+    .inputBox input:focus ~ .line,
+    .inputBox input:valid ~ .line{
+        height: 8.5vw;
+    }
+    .inputBox input:focus + .text,
+    .inputBox input:valid + .text,
+    .inputBox textarea:focus + .text,
+    .inputBox textarea:valid + .text{
+        top: -6vw;
+    }
+    .inputBox textarea:focus ~ .line,
+    .inputBox textarea:valid ~ .line{
+        height: 48vw;
+    }
+    button[type="submit"]{
+        font-size: 5vw;
+    }
+    .logoHeader a{
+        height: 100%;
+    }
+    .logoHeader svg{
+        padding: 0;
+    }
+  }
